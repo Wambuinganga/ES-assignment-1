@@ -1,0 +1,11 @@
+Difference between null and undefined:
+	undefined-a variable has been declared but has not been assigned a value yet
+					eg var Testvar: 
+					alert(Testvar): //shows defined
+	
+	Null-an assigned value that can also be assigned to a variable as a representstive of no value
+
+					eg var Testvar=null
+					alert(Testvar)://shows null
+
+	Undefined is a type while null is an object
