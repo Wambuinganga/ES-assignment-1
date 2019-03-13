@@ -1,0 +1,30 @@
+Assignment 2
+
+Q. Difference between defination, declaration and initialisation.
+
+	In declaration, the variable is usually not given a value
+
+	You declare JavaScript variables with the var keyword: var animal;
+
+	After the declaration, the variable is empty (it has no value).
+	
+	Declaration allocates memory. 
+
+
+	when defining, a variable is  declared and given a value for memory collection
+
+	To assign a value to the variable, use the equal sign var animal="dog"; 
+	
+	Definition assigns a value to the allocated memory.
+
+
+	Initialization means you are assigning the initial value to the variable
+
+	From the above statement we can freely debote that the initial value of a variable is undefined
+		
+
+
+	
+
+
+	 
