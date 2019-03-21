@@ -1,0 +1,19 @@
+function printfruits(fruits_list){
+fruits_lists=['apple', 'grapes', 'coconut', 'cherries', 'kiwi', 'melon', 'orange', 'pineaple', 'ribena'];}
+
+>>undefined
+
+fruits_lists
+(9) ["apple", "grapes", "coconut", "cherries", "kiwi", "melon", "orange", "pineaple", "ribena"]
+0: "apple"
+1: "grapes"
+2: "coconut"
+3: "cherries"
+4: "kiwi"
+5: "melon"
+6: "orange"
+7: "pineaple"
+8: "ribena"
+length: 9
+__proto__: Array(0)
+
