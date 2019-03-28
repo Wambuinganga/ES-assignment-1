@@ -1,0 +1,19 @@
+fruits={'kiwi':50,'plums':10,'bananas':10}
+{kiwi: 50, plums: 10, bananas: 10}
+
+var quantity=6;
+	undefined
+
+var price=fruits['bananas']*quantity;
+	
+undefined
+
+message=(quantity+' '+'bananas'+' '+'for KES'+price);
+
+	"6 bananas for KES60"
+
+function calculateFruitscost(message){
+return message;}
+
+console.log(message);
+VM1121:1 6 bananas for KES60
