@@ -1,0 +1,20 @@
+class KioskCalc
+{
+  constructor (fruit,quantity)
+  {
+    this.fruitsPriceList = {"melon":50,"sugarcane":20};
+    this.fruit_name = fruit;
+    this.specific_fruit = this.fruitsPriceList[fruit];
+    this.quantity = quantity;
+  }
+  getTotalCost ()
+  {
+    return this.specific_fruit * this.quantity;
+  }
+  
+}
+
+var kioskCalc = new KioskCalc("melon",2);
+console.log (kioskCalc.quantity + " " + kioskCalc.fruit_name + " for KES " + kioskCalc.getTotalCost());
+
+"2 melon for KES 100"
