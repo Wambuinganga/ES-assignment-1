@@ -1,0 +1,28 @@
+function kiosk() {
+  
+  var fruit; 
+  
+  function setFruit(myFruit) {
+   fruit = myFruit;
+  }
+  
+  function getFruit() {
+    return fruit
+  }
+  
+  var myKiosk = {
+    setFruit: setFruit,
+    getFruit: getFruit
+  }
+  
+  return myKiosk;
+}
+
+var mango = kiosk();
+mango.setFruit("mango ,cherries, banana");
+console.log(mango.getFruit());
+
+
+//results
+
+"mango ,cherries, banana"
