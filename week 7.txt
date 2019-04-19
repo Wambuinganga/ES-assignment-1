@@ -1,0 +1,54 @@
+CLASSES
+
+
+class lisalab{
+  constructor(name,age){
+    this.name=name;
+    this.age=age;
+   }
+  getName(){
+    return this.name
+  }
+  getAge(){
+    return this.age
+    
+  }
+}
+var lucy=new lisalab("lucy",19);
+var leah=new lisalab("leah",20);
+var shalinn=new lisalab("shalinn",28);
+
+console.log(lucy.getName())
+console.log(leah.getName())
+console.log(shalinn.getName())
+
+console.log(lucy.getAge())
+console.log(leah.getAge())
+console.log(shalinn.getAge())
+"lucy"
+"leah"
+"shalinn"
+19
+20
+28
+
+//write a programe that has your name and huduma number,set and get it
+
+class person{
+  constructor(name, hdmnumber){
+    this.name=name;
+    this.hdmnumber=hdmnumber;
+  }
+  getName(){
+    return this.name
+  }
+  getHdmnumber(){
+    return this.hdmnumber
+  }
+}
+var peshy= new person("peshy",3536789);
+console.log(peshy.getName())
+console.log(peshy.getHdmnumber())
+
+"peshy"
+3536789
