@@ -1,0 +1,166 @@
+// // Topic 1 Hello world!
+// The most basic code in Js that gives an output.
+//  Example
+   console.log("My name is Wambui");
+
+// Topic 2 Variables and Types
+// The following are variables and types in javascript
+// string, number, boolean, null, undefined, object.
+// Examples
+  var name="Wambui";//string
+  var number=9;//number
+  var a="true";//boolean
+  a=null;//null
+  var fruits=["mango","banana"];//array
+  var fruits={"mango":10}//object
+  
+// Topic 3 Arrays
+// Arrays are list holders that use brackets [] notation. you can target and access a
+// specific item in an array using indexing
+// Example
+  var fruits =["mango","banana","melon"];
+  console.log(fruits[1]);//prints out "banana"
+
+
+//   Topic 4 Manipulating Arrays
+//   in this topic methods focused on are;
+// push- adds an item at the end of an array
+// pop- removes the last item in an array
+// shifting- adds an item in begining of an array
+// unshifting- removes the first item in an aray
+// splice- removes a part of an array and creates another array with it
+//   Example
+
+var fruits=["mango","banana","melon"];
+fruits.push("apple");
+console.log(fruits);//["mango","banana","melon","apple"];
+fruits.pop();
+console.log(fruits);//[];"mango","banana"
+fruits.shift("orange");
+console.log(fruits);//["orange","mango","banana","melon"];
+fruits.unshift();
+console.log(fruits);//["mango","banana","melon"];
+var numbers = [0,1,2,3,4,5,6,7,8,9];
+var splice =numbers.splice(3,7);
+
+console.log(splice);        // [3,4,5,6,7]
+console.log(numbers);       //[0,1,2,8,9]
+
+// Topic 5 operators
+
+// These are symbols used in javascript to perform an operation
+// Examples
+// Addition (+);
+
+var name = "Wambui";
+console.log("Hello " + name ); //Hello Wambui
+
+//minus(-), multiplacation(*), division(/)
+console.log(10 - 4);     // 6
+console.log(3 * 5);     //15
+console.log(15 / 5);     //3
+//modulus
+//allows you to calculate the remainder in a division instance
+console.log(5 % 3);     // 2
+//comparison operators
+> greater than, <less than, >= greater than or equals to, <= less than or equals to
+
+// Topic 6 Conditions
+// conditions allows to chek if a statement is true and execute a command and if not execute another
+// The If condition
+var customer = "Wambui Ng'ang'a";
+var loggedin="True"
+if (customer == loggedin)
+{
+    console.log("This is our esteemed customer");
+}
+// The switch statements- they allow you to chose from a variety of options
+var profession = "Programmer";
+switch(profession)
+{
+    case "Senior":
+	console.log("This is the best programmer eve");
+        break;
+    case "Programmer":
+        console.log("You wanna write the best code today?");
+        break;
+    case "Junior":
+        console.log("Improve your skills today!");
+        break;
+    default:
+        console.log("Sorry, we can only talk to programmers");
+        break;
+}
+// Topic 7 Loops
+
+// in javascript there are two types of loops; for/in loop and while loop.
+//  For/in is the most commonly used
+//  Examples
+ //The for loop has three parts; initialization(i=0), condition(i<9) and incremental(i++) parts
+ 
+ for (var i = 0; i <= 9; i = i + 1)
+ {     console.log( i ); } // 0 1 2 3 4 5 6 7 8 9
+//While loops
+var i = 20;
+while (w > 0)
+{
+    console.log(w );
+    w-= 1;
+    }//prints all numbers from 0-20
+
+//break and continue statements which allows the loopto stop if a certain 
+//condition is not met
+var w = 20;
+while (true)
+{
+    console.log(w );
+    w -= 1;
+    if (w == 0)
+    {
+        break;
+    }
+
+// Topic 8 Objects
+//  Objects are used for data structure in javascript similar to dictionaries in python
+//  Example
+var Student = {
+    firstName : "Wambui",
+    lastName : "Ng'ang'a",
+    age : 19,
+    
+}
+
+console.log(Student.firstName);
+console.log(Student.lastName);
+console.log(Student.age);
+
+// Topic 9 functions
+// Functions are code blocks that allow arguments
+function User(){
+  var username, password;
+  function doLogin(user,pw) {
+    username = user;
+    password = pw;
+  }
+
+    var publicAPI = {
+      login: doLogin 
+    };
+    return publicAPI;
+}
+var Wambui = User();
+Wambui.login( "Peshy", "Thephenomenal" );
+
+
+// Topic 10 Pop-up Boxes
+// There are three pop-up boxes in Js namely; alert, confirm and prompt
+// Example
+
+
+confirm("Confirm new passwords");
+prompt("Save passwords");
+alert("Happy new month!");
+
+
+ 
+}
