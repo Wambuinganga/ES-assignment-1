@@ -1,0 +1,22 @@
+let user = {
+ name: "Jane Doe",
+ years: 20,
+
+};
+let {name, age, student= "false"} = user
+console.log(name, age, student)
+
+//results
+"Jane Doe"
+undefined
+"false"
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+ask(
+  "Save Password?",
+  function() { alert("Password Saved"); },
+  function() { alert("Not Saved"); }
+);
