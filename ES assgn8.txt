@@ -15,8 +15,9 @@ function ask(question, yes, no) {
   if (confirm(question)) yes()
   else no();
 }
+
 ask(
-  "Save Password?",
-  function() { alert("Password Saved"); },
-  function() { alert("Not Saved"); }
+  "Save passwords?",
+  () => alert("Saved passwords."),
+  () => alert("Passwords not saved")
 );
