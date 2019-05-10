@@ -1,0 +1,28 @@
+ class Mkulima {
+  
+  constructor() {
+    this.farms = [];
+    this.vendors = [];
+    this.products = [];
+    this.orders = [];
+  }
+   function addFarm(){
+	var farmId, name, farmer, phone, address;
+	function doLogin(id,name,farmer,phn,addr) {
+		farmId = id;
+		name = name;
+      farmer=farmer;
+      phone=phn;
+      address=addr
+		
+	}
+	var publicAPI = {
+		login: doLogin
+	};
+	return publicAPI;
+    }
+   
+
+    function  removeFarm(farmId){
+       return this.farms
+     }
