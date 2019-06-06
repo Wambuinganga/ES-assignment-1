@@ -1,0 +1,52 @@
+var body=document.body
+body.style.backgroundColor = "silver"
+
+var h1=document.getElementById("title")
+h1.style.color = "green";
+
+//gave the first h3 an id "heading"
+var h3=document.getElementById("heading")
+h3.innerHTML = h3.innerHTML.toUpperCase()
+
+//gave the second h3 an id "heading1"
+var h3=document.getElementById("heading1")
+h3.innerHTML = h3.innerHTML.toUpperCase()
+
+var list1=document.createElement("li")
+list1.innerHTML="Papayas"
+var ul=document.getElementById("fruList")
+ul.appendChild(list1)
+
+var list2=document.createElement("li")
+list2.innerHTML="Green Pepper"
+var ul=document.getElementById("vegList")
+ul.appendChild(list2)
+
+ASYNC/AWAIT
+async ensures that the function returns a promise, 
+and wraps non-promises in it
+Example
+async function greetings() {
+  return "Hello Wambui";
+}
+
+greetings().then(alert);
+//alerts Hello Wambui
+
+Await makes JavaScript wait until that 
+promise settles and returns its result.
+Example
+
+async function celebrate() {
+
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("yeeey!"), 3000)
+  });
+
+  let result = await promise; 
+
+  alert(result);
+}
+
+celebrate();
+
