@@ -23,8 +23,7 @@ var ul=document.getElementById("vegList")
 ul.appendChild(list2)
 
 ASYNC/AWAIT
-async ensures that the function returns a promise, 
-and wraps non-promises in it
+Async ensures that the function returns a promise, and wraps non-promises in it.
 Example
 async function greetings() {
   return "Hello Wambui";
@@ -33,8 +32,8 @@ async function greetings() {
 greetings().then(alert);
 //alerts Hello Wambui
 
-Await makes JavaScript wait until that 
-promise settles and returns its result.
+Await makes JavaScript wait until that promise settles and returns its result.
+The function execution “pauses” at the line 2 and resumes when the promise settles, with result becoming its result. Then the command "yeeey" is executed in 3 seconds. While the function execution is paused the engine can do other jobs. It can also execute another function.
 Example
 
 async function celebrate() {
