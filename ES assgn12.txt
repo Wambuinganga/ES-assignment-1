@@ -1,0 +1,41 @@
+// var title=document.getElementById("title")
+// setTimeout(()=>title.style.color="silver", 1000)
+ 
+
+
+ var span = document.getElementsByTagName('span');
+
+for(var x = 0; x < span.length; x++)
+{
+    span[x].onclick=function()
+    {
+        if(this.parentNode)
+        {
+            var childList = this.parentNode.getElementsByTagName('li');
+            for(var y = 0; y< childList.length;y++)
+            {
+                var currentState = childList[y].style.display;
+                if(currentState=="block")
+                {
+                    childList[y].style.display="none";
+                }
+                else
+                {
+                    childList[y].style.display="block";
+                }
+            }
+        }
+    }
+}
+
+//I added two fields in the HTML:
+ //<input type='text' id = 'fruit' />
+//<input type='button' value = 'add' id = 'add'>
+
+document.getElementById('add').onclick = function(){
+  var text = document.getElementById('idea').value;     
+  var node = document.createElement("li");    
+  var newText = document.createTextNode(text);    
+  node.appendChild(newText);     
+  document.getElementById('fruList').appendChild(node);
+}
