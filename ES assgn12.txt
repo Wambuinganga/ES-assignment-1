@@ -1,5 +1,8 @@
-// var title=document.getElementById("title")
-// setTimeout(()=>title.style.color="silver", 1000)
+var changeColor = () =>  {
+  var heading = document.getElementById("title");
+  
+  heading.style.color = heading.style.color === "green" ? "silver" : "green";
+}
  
 
 
